@@ -93,4 +93,4 @@ Keep it under 250 characters.
 
 ## 🧑‍💻 Author
 
-Made with 💻 by [Your Name] — follow for more @yourhandle
+Made with 💻 by HarziizDev — follow for more https://github.com/Harziz712/
