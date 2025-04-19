@@ -1,54 +1,96 @@
-# React + TypeScript + Vite
+// README.md
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 📸 CaptionCrafter AI
 
-Currently, two official plugins are available:
+Generate engaging social media captions in seconds with the power of AI. Tailored for content creators, marketers, and businesses.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Input a topic or idea
+- Choose a tone (Witty, Professional, Friendly, etc.)
+- AI-generated caption with relevant hashtags
+- Copy to clipboard or download
+- Optional: Save drafts (coming soon)
+- Optional: Auto-schedule posts with n8n (coming soon)
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+---
+
+## 🛠 Tech Stack
+
+- **Frontend**: React + TypeScript
+- **UI**: ShadCN UI + Tailwind CSS
+- **Backend**: Node.js + Express or Firebase Functions
+- **AI**: OpenAI API (GPT-4 Turbo)
+- **Database**: Supabase / Firebase
+- **Auth** (optional): Clerk / Auth.js
+- **Extras**: n8n, Unsplash API (for image suggestions)
+
+---
+
+## 📂 Folder Structure
+
+```
+src/
+├── components/
+│   ├── CaptionForm.tsx         // Input form
+│   ├── GeneratedCaption.tsx    // Output area
+│   └── ToneSelector.tsx        // Tone dropdown
+├── pages/
+│   └── index.tsx               // Main page
+├── utils/
+│   └── api.ts                  // API call logic
+├── hooks/
+│   └── useGenerateCaption.ts   // AI logic with useState + useEffect
+├── styles/
+│   └── globals.css             // Tailwind styles
+└── App.tsx                     // Root app structure
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🔧 How to Run Locally
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+git clone https://github.com/yourusername/captioncrafter-ai.git
+cd captioncrafter-ai
+npm install
+npm run dev
 ```
+
+---
+
+## 🔑 Environment Variables
+
+Create a `.env.local` file:
+```env
+OPENAI_API_KEY=your_openai_key_here
+```
+
+---
+
+## 🧠 AI Prompt Example
+```ts
+const prompt = `
+Generate a social media caption for the following topic: "${topic}"
+Tone: ${tone}.
+Include 3-5 relevant hashtags.
+Keep it under 250 characters.
+`;
+```
+
+---
+
+## 🧪 Future Roadmap
+
+- [ ] Add login and user-specific caption history
+- [ ] Integrate Unsplash API for image suggestions
+- [ ] Connect to Buffer or n8n for scheduling
+- [ ] Analytics dashboard (caption performance tracking)
+
+---
+
+## 🧑‍💻 Author
+
+Made with 💻 by HarziizDev — follow for more https://github.com/Harziz712/
