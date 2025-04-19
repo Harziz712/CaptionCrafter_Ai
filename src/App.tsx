@@ -1,8 +1,10 @@
-import React from 'react'
+import Index from './pages'
 
 const App = () => {
   return (
-    <div>App</div>
+    <div>
+    <Index/>
+    </div>
   )
 }
 
