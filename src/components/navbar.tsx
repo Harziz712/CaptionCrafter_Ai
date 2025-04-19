@@ -14,15 +14,15 @@ const Navbar = () => {
         </h2>
         
         {/* Mobile Hamburger Menu */}
-        <div className="md:hidden">
+        <div className="md:hidden ">
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>
               <button className="p-2" aria-label="Toggle menu">
-                <Menu size={24} />
+                <Menu size={32} />
               </button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-64 pt-10">
-              <div className="flex flex-col space-y-4 mt-6">
+            <SheetContent side="right" className="w-64 pt-10 bg-gradient-to-br from-pink-300 via-purple-300 to-blue-300 border-l-5 border-white-800">
+              <div className="flex flex-col space-y-4 mt-6 justify-center items-center">
                 {NavLinks.map((link, i) => (
                   <a
                     key={i}
@@ -34,7 +34,7 @@ const Navbar = () => {
                   </a>
                 ))}
                 <button className="text-sm py-2">Login</button>
-                <button className="rounded-full bg-black text-white py-2 px-4 text-sm mt-2">
+                <button className="rounded-full bg-black text-white py-2 px-8 text-sm mt-2">
                   Sign up
                 </button>
               </div>
