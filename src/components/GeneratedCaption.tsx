@@ -21,7 +21,7 @@ const GeneratedCaption: React.FC<GeneratedCaptionProps> = ({ generatedCaption })
   if (!generatedCaption) return null;
 
   return (
-    <Card className="mt-6">
+    <Card className="mt-6 p-2">
       <CardContent className="p-6 text-lg text-gray-800 space-y-4">
         <p>{generatedCaption}</p>
       </CardContent>

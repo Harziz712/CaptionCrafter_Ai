@@ -3,12 +3,15 @@ import { Button } from "./ui/button";
 import { Label } from "./ui/label";
 import { Sparkles, Loader2 } from "lucide-react";
 import ToneSelector from './ToneSelector';
+import PlatformSelector from './platformselector';
 
 interface CaptionFormProps {
   topic: string;
   setTopic: (value: string) => void;
   tone: string;
   setTone: (value: string) => void;
+  platform: string;
+  setPlatform: (value: string) => void;
   loading: boolean;
   onGenerate: () => void;
 }
@@ -18,6 +21,8 @@ const CaptionForm: React.FC<CaptionFormProps> = ({
   setTopic,
   tone,
   setTone,
+  platform,
+  setPlatform,
   loading,
   onGenerate,
 }) => {
@@ -40,6 +45,8 @@ const CaptionForm: React.FC<CaptionFormProps> = ({
       </div>
 
       <ToneSelector tone={tone} setTone={setTone} />
+
+      <PlatformSelector platform={platform} setPlatform={setPlatform} />
 
       <Button
         type="submit"

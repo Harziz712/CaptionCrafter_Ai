@@ -4,7 +4,7 @@ import Navbar from "../components/navbar"
 
 const Index = () => {
   return (
-    <div>
+    <div className=" min-h-screen">
         <Navbar/>
         <Hero/>
         <Captionarea/>
