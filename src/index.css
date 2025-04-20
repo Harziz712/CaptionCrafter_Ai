@@ -117,7 +117,6 @@
   }
   body {
     @apply bg-background text-foreground;
-    @apply font-family 'Libre Baskerville', serif;
-    
+    font-family: 'Libre Baskerville', serif;
   }
 }
