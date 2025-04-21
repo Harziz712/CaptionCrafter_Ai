@@ -34,13 +34,13 @@ const CaptionForm: React.FC<CaptionFormProps> = ({
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
       <div>
-        <Label htmlFor="topic" className="text-sm font-bold">Enter Topic or Idea</Label>
+        <Label htmlFor="topic" className="text-sm font-bold text-purple-600">Enter Topic or Idea</Label>
         <Input
           id="topic"
           placeholder="e.g. Boost my portfolio visibility"
           value={topic}
           onChange={(e) => setTopic(e.target.value)}
-          className="mt-2 py-6 px-4 text-base rounded-xl"
+          className="mt-2 py-6 px-4 text-sm rounded-xl border-2 border-purple-800 "
         />
       </div>
 

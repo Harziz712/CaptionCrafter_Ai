@@ -11,9 +11,9 @@ interface PlatformSelectorProps {
 const PlatformSelector: React.FC<PlatformSelectorProps> = ({ platform, setPlatform }) => {
   return (
     <div className="space-y-2">
-      <Label className="text-sm font-bold">Select Platform</Label>
+      <Label className="text-sm font-bold text-purple-600">Select Platform</Label>
       <Select onValueChange={setPlatform} value={platform} >
-        <SelectTrigger className="w-full py-6 text-sm" >
+        <SelectTrigger className="w-full py-6 text-sm border-2 border-purple-800" >
           <SelectValue placeholder="Choose platform..."  />
         </SelectTrigger>
         <SelectContent className="bg-purple-50 font-sans">
