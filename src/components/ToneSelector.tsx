@@ -13,12 +13,12 @@ const ToneSelector: React.FC<ToneSelectorProps> = ({ tone, setTone }) => {
     <div className="space-y-2">
       <Label className="text-sm font-bold">Select a Tone</Label>
       <Select onValueChange={setTone} value={tone}>
-        <SelectTrigger className="w-full py-6 text-base">
+        <SelectTrigger className="w-full py-6 text-sm">
           <SelectValue placeholder="Choose tone..." />
         </SelectTrigger>
-        <SelectContent>
+        <SelectContent className="bg-purple-50 font-sans">
           {tones.map((toneOption, i) => (
-            <SelectItem key={i} value={toneOption}>
+            <SelectItem key={i} value={toneOption} className="border-2 border-blue-100 bg-blue-100">
               {toneOption}
             </SelectItem>
           ))}

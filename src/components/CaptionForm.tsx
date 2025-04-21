@@ -44,9 +44,9 @@ const CaptionForm: React.FC<CaptionFormProps> = ({
         />
       </div>
 
-      <ToneSelector tone={tone} setTone={setTone} />
+<div className="flex grid-col  flex-col md:grid md:grid-cols-2 gap-4 ">      <ToneSelector tone={tone} setTone={setTone} />
 
-      <PlatformSelector platform={platform} setPlatform={setPlatform} />
+<PlatformSelector platform={platform} setPlatform={setPlatform} /></div>
 
       <Button
         type="submit"

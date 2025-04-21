@@ -12,13 +12,13 @@ const PlatformSelector: React.FC<PlatformSelectorProps> = ({ platform, setPlatfo
   return (
     <div className="space-y-2">
       <Label className="text-sm font-bold">Select Platform</Label>
-      <Select onValueChange={setPlatform} value={platform}>
-        <SelectTrigger className="w-full py-6 text-base">
-          <SelectValue placeholder="Choose platform..." />
+      <Select onValueChange={setPlatform} value={platform} >
+        <SelectTrigger className="w-full py-6 text-sm" >
+          <SelectValue placeholder="Choose platform..."  />
         </SelectTrigger>
-        <SelectContent>
+        <SelectContent className="bg-purple-50 font-sans">
           {platforms.map((platformOption, i) => (
-            <SelectItem key={i} value={platformOption}>
+            <SelectItem key={i} value={platformOption} className="border-2 border-blue-100 bg-blue-100">
               {platformOption}
             </SelectItem>
           ))}

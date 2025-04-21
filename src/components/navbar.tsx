@@ -44,7 +44,7 @@ const Navbar = () => {
       </div>
 
       {/* Desktop Navigation */}
-      <div className="hidden md:block md:col-span-2">
+      <div className="hidden md:block md:col-span-2 ">
         <div className="border-2 border-white-800 w-full h-[60px] rounded-full bg-blue-50/40">
           <nav className="w-full flex justify-center items-center gap-10 h-full px-4">
             {NavLinks.map((link, i) => (
