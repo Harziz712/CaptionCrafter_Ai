@@ -1,14 +1,13 @@
 import { Sparkles, Play } from "lucide-react";
 import { Button } from "./ui/button";
 import { Badge } from "./ui/badge";
-import { Homebtn } from "./ui/ui";
 
 const Hero = () => {
   return (
-    <div className="w-full min-h-[500px] flex flex-col items-center justify-center px-4 py-16 text-center">
+    <div className="w-full min-h-[500px] flex flex-col items-center justify-center px-4 py-40  text-center">
       {/* <Badge variant="outline" className="bg-blue-50/40 text-gray-800 px-4 py-2 rounded-full text-sm mb-8 border-2 border-blue-400"> */}
-   <Badge variant="outline" className="animatedButton rounded-full">
-   <h2 className="animatedButtonText rounded-full bg-blue-50/40 text-gray-800 "> Powered by AI — Built for Creators & Marketers</h2>
+   <Badge variant="outline" className="animatedButton rounded-full xl:top-[15rem] md:top-[15rem] sm:top-[11rem]">
+   <h2 className="animatedButtonText rounded-full bg-blue-50/40 text-white "> Powered by AI — Built for Creators & Marketers</h2>
       </Badge>
 
 

@@ -136,10 +136,7 @@
     /* border: 1px solid var(--accent); */
     /* transform: rotate(-12deg); */
     position: absolute;
-    top: 8rem; 
     z-index: 50;
-    padding: 15px 5px;
-
   }
 
   @keyframes animationGradient {
