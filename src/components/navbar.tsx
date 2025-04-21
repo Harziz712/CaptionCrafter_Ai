@@ -9,8 +9,8 @@ const Navbar = () => {
   return (
     <header className="p-4 md:p-10 flex flex-col md:grid md:grid-cols-4 justify-center items-center gap-4">
       <div className="w-full flex justify-between items-center md:block">
-        <h2 className="font-extrabold text-lg md:text-2xl col-span-1">
-          CaptionCrafter_AI
+        <h2 className="font-extrabold lg:text-lg md:text-md col-span-1">
+          CaptionCrafter.AI
         </h2>
         
         {/* Mobile Hamburger Menu */}
@@ -44,21 +44,21 @@ const Navbar = () => {
       </div>
 
       {/* Desktop Navigation */}
-      <div className="hidden md:block md:col-span-2 ">
+      <div className="hidden md:block xl:col-span-2 lg:col-span-3 md:col-span-3 ">
         <div className="border-2 border-white-800 w-full h-[60px] rounded-full bg-blue-50/40">
-          <nav className="w-full flex justify-center items-center gap-10 h-full px-4">
+          <nav className="w-full flex justify-around items-center  lg:gap-10 md:gap-5 h-full px-4">
             {NavLinks.map((link, i) => (
               <a
                 key={i}
                 href={link.url}
-                className="text-center text-sm text-gray-800 hover:text-blue-500 transition duration-300 ease-in-out"
+                className="text-center lg:text-sm md:text-xs text-gray-800 hover:text-blue-500 transition duration-300 ease-in-out"
               >
                 {link.title}
               </a>
             ))}
-            <button className="text-sm">Login</button>
-            <button className="rounded-full bg-black text-white py-2 px-4 text-sm">
-              Sign up
+            <button className="text-sm text-purple-600"><a href="#">Login</a></button>
+            <button className="rounded-full bg-purple-500 text-blue-50 py-2 px-4 text-sm">
+              <a href="#">Sign up</a>
             </button>
           </nav>
         </div>
