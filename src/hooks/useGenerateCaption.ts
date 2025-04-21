@@ -6,6 +6,7 @@ const genAI = new GoogleGenerativeAI(import.meta.env.VITE_GOOGLE_GEMINI_API_KEY)
 const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
 
 export const useGeneratedCaption = () => {
+  
   const [topic, setTopic] = useState('');
   const [tone, setTone] = useState('');
   const [platform, setPlatform] = useState('');

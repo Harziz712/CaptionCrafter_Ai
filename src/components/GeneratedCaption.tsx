@@ -8,7 +8,7 @@ interface GeneratedCaptionProps {
   generatedCaption: string;
 }
 
-const GeneratedCaption: React.FC<GeneratedCaptionProps> = ({ generatedCaption }) => {
+const GeneratedCaption = ({ generatedCaption }:(GeneratedCaptionProps)) => {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {

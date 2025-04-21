@@ -1,7 +1,6 @@
 import CaptionForm from './CaptionForm';
 import GeneratedCaption from './GeneratedCaption';
 import useGeneratedCaption from '../hooks/useGenerateCaption';
-import { GlassShadow } from './ui/ui';
 
 const Captionarea = () => {
   const {

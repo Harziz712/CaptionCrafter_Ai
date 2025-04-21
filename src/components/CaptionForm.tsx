@@ -16,7 +16,7 @@ interface CaptionFormProps {
   onGenerate: () => void;
 }
 
-const CaptionForm: React.FC<CaptionFormProps> = ({
+const CaptionForm = ({
   topic,
   setTopic,
   tone,
@@ -25,7 +25,8 @@ const CaptionForm: React.FC<CaptionFormProps> = ({
   setPlatform,
   loading,
   onGenerate,
-}) => {
+}:(CaptionFormProps)) => {
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     onGenerate();
@@ -44,9 +45,10 @@ const CaptionForm: React.FC<CaptionFormProps> = ({
         />
       </div>
 
-<div className="flex grid-col  flex-col md:grid md:grid-cols-2 gap-4 ">      <ToneSelector tone={tone} setTone={setTone} />
-
-<PlatformSelector platform={platform} setPlatform={setPlatform} /></div>
+        <div className="flex grid-col  flex-col md:grid md:grid-cols-2 gap-4 ">  
+        <ToneSelector tone={tone} setTone={setTone} />
+        <PlatformSelector platform={platform} setPlatform={setPlatform} />
+        </div>
 
       <Button
         type="submit"
