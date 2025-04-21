@@ -50,7 +50,7 @@ const CaptionForm: React.FC<CaptionFormProps> = ({
 
       <Button
         type="submit"
-        className="w-full py-6 text-base font-semibold bg-blue-600 hover:bg-blue-500"
+        className="w-full py-6 text-base font-semibold bg-purple-600 hover:bg-purple-500"
         disabled={loading}
       >
         {loading ? (

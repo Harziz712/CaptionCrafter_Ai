@@ -123,4 +123,41 @@
     font-family: 'Libre Baskerville', serif;
 
   }
+  .animatedButton {
+    /* position: relative; */
+    height: 3rem;
+    background: linear-gradient(to right, #9c28d6, #4249a7, #0014c5, #43439f, #bb32a8, #bc0297);
+    background-size: 200%;
+    animation: animationGradient linear 2.5s infinite;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid var(--accent); */
+    /* transform: rotate(-12deg); */
+    position: absolute;
+    top: 8rem; 
+    z-index: 50;
+    padding: 15px 5px;
+
+  }
+
+  @keyframes animationGradient {
+    to {
+      background-position: 200%;
+    }
+  }
+
+  .animatedButtonText{
+    /* position: absolute; */
+    inset: 3px 3px 3px 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease;
+    cursor: pointer;
+    padding: 10px 20px;
+  }    
+  
+  
 }
