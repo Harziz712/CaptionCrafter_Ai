@@ -6,11 +6,15 @@ const genAI = new GoogleGenerativeAI(import.meta.env.VITE_GOOGLE_GEMINI_API_KEY)
 const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
 
 export const useGeneratedCaption = () => {
+  const [copied, setCopied] = useState(false);
   const [topic, setTopic] = useState('');
   const [tone, setTone] = useState('');
   const [platform, setPlatform] = useState('');
   const [generatedCaption, setGeneratedCaption] = useState('');
   const [loading, setLoading] = useState(false);
+  const [drawerOpen, setDrawerOpen] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(false);
+
 
   const handleGenerate = async () => {
     if (!topic || !tone || !platform) {
@@ -44,6 +48,12 @@ export const useGeneratedCaption = () => {
     generatedCaption,
     loading,
     handleGenerate,
+    copied,
+    setCopied,
+    drawerOpen,
+    setDrawerOpen,
+    isExpanded,
+    setIsExpanded
   };
 };
 
