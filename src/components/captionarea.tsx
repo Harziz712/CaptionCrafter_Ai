@@ -1,6 +1,7 @@
 import CaptionForm from './CaptionForm';
 import GeneratedCaption from './GeneratedCaption';
 import useGeneratedCaption from '../hooks/useGenerateCaption';
+import handleGenerate from '../utils/api';
 
 const Captionarea = () => {
   const {
@@ -12,7 +13,6 @@ const Captionarea = () => {
     setPlatform,
     generatedCaption,
     loading,
-    handleGenerate,
   } = useGeneratedCaption();
 
   return (
