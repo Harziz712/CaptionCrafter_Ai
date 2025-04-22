@@ -23,7 +23,7 @@ export const useGeneratedCaption = () => {
     }
     setLoading(true);
     try {
-      const prompt = `Generate a ${tone} social media caption for ${platform} about: "${topic}"`;
+      const prompt = `Write one engaging, ${tone.toLowerCase()} social media caption for ${platform} about "${topic}". The caption should be 100 words or less. Do not include explanations, options, or formatting—just the caption text.`;
 
       const result = await model.generateContent(prompt);
       const response = await result.response;
