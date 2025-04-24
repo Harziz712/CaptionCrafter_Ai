@@ -5,6 +5,10 @@ export const NavLinks = [
     { title: "Pricing", url: '/pricing' },
     { title: "Explore", url: '/explore' },
   ];
+
+export const platforms = ["Instagram", "LinkedIn", "Twitter", "Facebook", "TikTok", "YouTube", "Snapchat", "Pinterest", "Reddit", "WhatsApp"];
+export const tones = ["Funny", "Serious", "Inspirational", "Casual", "Professional", "Playful", "Witty", "Motivational", "Informative", "Conversational"];
+
 export const Features = [
     { title: "AI-Powered", description: "Our AI technology generates captions that are relevant and engaging.", icon: "🤖" },
     { title: "Customizable", description: "Tailor the captions to fit your brand's voice and style.", icon: "🎨" },

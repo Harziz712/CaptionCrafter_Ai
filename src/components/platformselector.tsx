@@ -1,7 +1,8 @@
+import { platforms } from "../data/dict";
 import { Label } from "./ui/label";
 import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from "./ui/select";
 
-const platforms = ["Instagram", "LinkedIn", "Twitter"];
+
 
 interface PlatformSelectorProps {
   platform: string;

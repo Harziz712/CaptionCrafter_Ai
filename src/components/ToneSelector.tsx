@@ -1,7 +1,7 @@
+import { tones } from "../data/dict";
 import { Label } from "./ui/label";
 import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from "./ui/select";
 
-const tones = ["Witty", "Professional", "Friendly", "Inspirational", "Playful", "Bold"];
 
 interface ToneSelectorProps {
   tone: string;
