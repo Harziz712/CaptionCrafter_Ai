@@ -32,7 +32,7 @@ export const useGeneratedCaption = () => {
 
     } catch (error) {
       console.error("Gemini API error:", error);
-      toast.error("Failed to generate caption with Gemini. Try again.");
+      toast.error("Failed to generate caption with CaptionCrafter.AI. Try again.");
     } finally {
       setLoading(false);
     }
